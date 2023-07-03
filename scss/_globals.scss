@@ -1,0 +1,129 @@
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+#navbar1 {
+  li {
+    a {
+      color: black;
+      transition: color 0.3s;
+
+      &:hover {
+        color: $warning;
+      }
+    }
+  }
+}
+
+#festivals {
+    h2 {
+    margin-left: 180px;
+  }   
+
+  a {
+    color: rgb(252, 252, 252);
+    background-color: black;
+    transition: color 0.3s;
+
+    &:hover {
+      color: black;
+      background-color: white;
+    }
+  }
+}
+ 
+
+article {
+  min-width: 261px;
+  min-height: 364;
+  margin-bottom: 20px;
+  position: relative;
+  overflow: hidden;
+  transition: box-shadow 0.3s ease;
+
+  &:hover {
+      box-shadow: 0 0 10px rgb(14, 9, 9);
+      transform: translateY(-10px);
+      }
+    
+
+  >img {
+      max-width: 100%;
+  }
+
+  >div {
+      margin-left: 20px;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      color: $white;
+
+       
+      >div {
+          >div {
+              display: flex;
+              justify-content: space-between;
+          }
+
+          >p.date-spectacle {
+              border-bottom: 3px solid $warning;
+              opacity: 100%;
+              margin-top: -15px;
+              width: fit-content;
+          }
+      }
+  }
+}
+
+
+
+.festiTitle {
+  text-decoration: none;
+  color: $white;
+  background-color: $black;
+  width: fit-content;
+  min-width: 140px;
+  padding: 10px;
+}
+
+.festiTitle:hover {
+  text-decoration: none;
+  color: $black;
+  background-color: $white;
+}
+ .details {
+  border: 1px solid $warning;
+  color: $warning;
+  background-color: $primary;
+
+ }
+ .details:hover {
+  color: $primary;
+  background-color: $warning;
+ }
+
+ .reserver {
+  border: 1px solid $warning;
+  color: $primary;
+  background-color: $warning;
+
+ }
+ .reserver:hover {
+  color: $warning;
+  background-color: $primary;
+ }
+
+img {
+  max-width: 100%;
+}
+
+ 
+
+ 
